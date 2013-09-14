@@ -14,7 +14,7 @@ int binary_search(int* arr, int size, int value){
   while(min <= max){
     
     int mid = min+(max-min)/2;
-    if(value > arr[mid]){`     
+    if(value > arr[mid]){ 
       min = mid + 1;
     }
     else if(value < arr[mid]){
