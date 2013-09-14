@@ -8,7 +8,9 @@ int binary_search(int* arr, int size, int value){
   int min, max;
   min = 0;
   max = size -1;
-
+  
+  //  <= is needed
+  // considering arr = {1,5}, value = 5
   while(min <= max){
     
     int mid = min+(max-min)/2;
