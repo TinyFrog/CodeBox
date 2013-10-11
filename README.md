@@ -1,5 +1,4 @@
 CodeBox
 =======
-With all these hard work done here, SSB made it in Nov, 2011!
 
-You can do it again, in Nov, 2013!
+My solutions for coding questions from leetcode.com, "cracking the interview", "programming pearl" and “introduction to algorithm”
