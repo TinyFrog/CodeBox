@@ -14,3 +14,6 @@ print 3.14159262304802408423
 # if one operand is decimal, the result would decimal
 print 1.0 / 3
 print 1 / 3
+
+# this is valid!
+print 7/+4
