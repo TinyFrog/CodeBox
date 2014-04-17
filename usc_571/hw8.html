@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html><head>
+     <title>571 HW8 Shaobo Sun</title>
+
+<script type="text/javascript">
+
+var req="";
+
+function loadXMLDoc() {
+var ind = document.perlForm.hotel_chain.selectedIndex;
+
+var chain = document.perlForm.hotel_chain[ind].innerHTML;
+var cityName = document.perlForm.city.value;
+
+
+cityName = cityName.replace(/\s/g,"+");
+
+    if(document.perlForm.city.value == ""){
+     alert('Please enter the city name!');
+     return false;
+    }
+       
+    req = false;
+  
+    if(window.XMLHttpRequest) {
+         try {
+               req = new XMLHttpRequest();
+
+        } catch(e) {
+               req = false;
+        }
+
+    } else if(window.ActiveXObject) {
+            try {
+             req = new ActiveXObject("Msxml2.XMLHTTP");
+           } catch(e) {
+             try {
+                    req = new ActiveXObject("Microsoft.XMLHTTP");
+             } catch(e) {
+                    req = false;
+             }
+          }
+    }
+
+var BASE_URL = "http://cs-server.usc.edu:64834/";
+var url = BASE_URL+"examples/servlet/ajax_hotel?city="+cityName+"&chain="+chain;
+
+req.open("GET", url, true);
+req.onreadystatechange = myCallback;
+req.setRequestHeader("Connection", "Close");
+req.setRequestHeader("Method", "GET" + url + "HTTP/1.1")
+req.send();
+
+
+}
+
+function myCallback(){
+
+    if (req.readyState == 4) { 
+        if (req.status == 200) {
+       
+         //var doc = eval('(' + req.responseText + ')');
+    
+         var json = JSON.parse(req.responseText);
+        
+        
+         if(json.hotels.hotel==null){
+             document.getElementById("myDiv").innerHTML = "No Result Found!!";
+          return;
+         }
+        
+         var len = json.hotels.hotel.length;
+        
+         var hotel = json.hotels.hotel;
+        
+         var html = "<table><table border>";
+         html+= "<tr><td align=middle><b>Image</td><td align=middle><b>Name</td><td align=middle><b>Location</td><td><b>Rating out of 5</td><td><b>Reviews</td><td><b>Post to Facebook</td></tr>";
+         for(var i = 0; i<len;i++){
+             var temp = hotel[i];
+
+          html+= "<tr>\n";
+
+     html+= "<td><img src="+temp.img_url+"  width=120 height=80></td>";
+     html+= "<td align=middle>";
+     html+= temp.name;
+     html+= "</td>";
+     //if(i==0)
+     //alert(html);
+    
+     html+= "<td align=middle>";
+     html+= temp.loc;
+     html+= "</td>";
+
+        html+= "<td align=middle>";
+     html+= temp.no_of_stars;
+     html+= "</td>";
+     html+= "<td align=middle><a href="+temp.review_url+">"+ temp.no_of_review+ "</a></td>";
+
+     html+= "<td align=middle><input type=image src=./fbicon.jpg width=100 height=40 onclick=\"fb('"+temp.name+"','"+temp.img_url+"','"+temp.loc+"','"+temp.review_url+"','"+temp.no_of_stars+"')\"></td>";
+     html+= "</tr>"
+
+
+         }
+     html+= "</table>";
+     document.getElementById("myDiv").innerHTML = html;
+        } else {
+
+     alert("There was a problem retrieving the XML data:\n" +   req.statusText);
+        }
+    }
+
+}
+
+</script>
+
+</head>
+<body>
+
+<div id='fb-root'></div>
+<script src='http://connect.facebook.net/en_US/all.js'></script>
+<script>
+    
+
+     function fb(name,pic,loc,review_url,no_of_stars) {
+
+     var des = "The hotel located at "+loc+" and has a rating of "+no_of_stars;
+       
+        var obj = {
+          method: 'feed',
+          link: review_url,
+          picture: pic,
+          name: name,
+          caption: 'Check This Hotel',
+          description: des
+        };
+
+        function callback(response) {
+          document.getElementById('myDiv').innerHTML += "Post ID: " + response['post_id'];
+        }
+
+     FB.init({appId: "219221408179013", status: true, cookie: true});
+        FB.ui(obj, callback);
+      }
+</script>
+
+    <h1>Hotel Search</h1>
+    <form name="perlForm" method="GET">
+         <input type="text" id="city" />
+     <br>
+         <select name="hotel_chain" id="select">
+     <option>Hilton</option>
+     <option>Marriott</option>
+     <option>Accor</option>
+     <option>Hyatt</option>
+     <option>InterContinentel</option>
+     </select>
+     <br>
+     <input type=button id="butt" value="Search!" onclick="return loadXMLDoc()">
+    </form>
+
+    <div id="myDiv"></div>
+    <noscript>
+   
+</body>
+</html>
