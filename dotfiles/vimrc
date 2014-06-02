@@ -1,0 +1,27 @@
+" https://git.corp.yahoo.com/shahar/dotfiles/blob/master/.vimrc
+
+" show line number !!
+set nu
+
+" Comment out until finding a good color scheme
+" set t_Co=256
+
+set tabstop=4
+set expandtab
+set shiftwidth=4
+
+" http://vim.wikia.com/wiki/VimTip906: 
+" In a console or terminal version of Vim, there is no standard procedure to paste text from another application. Instead, the terminal may emulate pasting by inserting text into the keyboard buffer, so Vim thinks the text has been typed by the user. After each line ending, Vim may move the cursor so the next line starts with the same indent as the last. However, that will change the indentation already in the pasted text.
+set paste
+
+" self-explained
+set noswapfile
+
+" line number is too conspicuous 
+:highlight LineNr ctermfg=grey
+
+" TODO: change the bg color of ctrl-p 
+
+" Highlight problematic whitespace
+set list
+set listchars=tab:>.,trail:.,extends:#,nbsp:.
