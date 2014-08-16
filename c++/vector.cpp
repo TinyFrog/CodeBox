@@ -3,7 +3,7 @@ vector<int> new_(original);
 vector<int> cao {25,75,100};
 
 // two dimensions vector
-vector<vector<int>> vec_1;
+vector<vector<int> > vec_1;
 vector<int> vec_2;
 vec_2.push_back(3);
 vec_1.push_back(vec_2);
