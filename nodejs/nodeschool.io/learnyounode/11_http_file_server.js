@@ -9,12 +9,9 @@ var server = http.createServer(function callback (request, response) {
     readable.setEncoding('utf8');
     readable.on('data', function(data) {
         responseData = data;
-
-
         response.writeHead(200, {"Content-Type": "text/plain"});
         // this line cannot be put outside 
         response.end(responseData);
-
     });
 });
 
