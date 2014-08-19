@@ -3,24 +3,7 @@ var http = require('http'),
     port = process.argv[2],
     filePath = process.argv[3];
 
-
-
-/*
-
-    var server = http.createServer(function (req, res) {
-      res.writeHead(200, { 'content-type': 'text/plain' })
-
-      fs.createReadStream(process.argv[3]).pipe(res)
-    })
-
-    server.listen(Number(process.argv[2]))
-
-
-*/
-
-//console.log(port);
 var server = http.createServer(function callback (request, response) {
-
     var responseData = "";
     var readable = fs.createReadStream(filePath);
     readable.setEncoding('utf8');
@@ -33,9 +16,6 @@ var server = http.createServer(function callback (request, response) {
         response.end(responseData);
 
     });
-
-
-
 });
 
 server.listen(port);
