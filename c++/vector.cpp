@@ -1,6 +1,6 @@
 // create a vector by passing another
 vector<int> new_(original);
-vector<int> cao {25,75,100};
+vector<int> foo {25,75,100};
 
 // two dimensions vector
 vector<vector<int> > vec_1;
