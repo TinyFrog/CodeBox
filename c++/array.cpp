@@ -17,8 +17,12 @@ insertion_sort(int S[]){
 // 2-d array
 // http://stackoverflow.com/questions/8767166/passing-2d-array-to-function
 int **a = new int*[x];
-for (int i = 0; i < x; ++i)
+for (int i = 0; i < x; ++i) {
     a[i] = new int[y];
+    for (int j = 0; j<y; j++) {
+        a[i][j] = -1;   
+    }
+}
 
 // passing 2-d array to function
 void a(int **a)
@@ -27,7 +31,3 @@ void a(int **a)
 int** intmap = new int*[26];
 for(int i =0; i<26; i++)
     intmap[i] = new int[10];
-
-
-
-
