@@ -1,6 +1,12 @@
 // initialize an array
 int a[5] = {1,2,3,4,5};
 
+// set all elements to 0
+int myArray[10] = {0};
+
+// In C++, an empty initialization list will also initialize every element to 0:
+int myArray[10] = {};
+
 // passing array as a parameter
 // http://stackoverflow.com/questions/763861/passing-an-array-as-an-argument-in-c
 
