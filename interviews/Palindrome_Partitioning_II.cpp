@@ -1,3 +1,5 @@
+https://oj.leetcode.com/problems/palindrome-partitioning-ii/
+
 class Solution {
 public:
     int minCut(string s) {
