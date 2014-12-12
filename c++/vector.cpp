@@ -1,6 +1,13 @@
+vector<int> original;
 // create a vector by passing another
 vector<int> new_(original);
 vector<int> foo {25,75,100};
+
+// create 100, 100, 100, 100
+vector<int> awesome(4,100);
+
+// 2d array initialization
+vector<vector<int>> path(m+1, vector<int>(n+1, 0));
 
 // two dimensions vector
 vector<vector<int> > vec_1;
