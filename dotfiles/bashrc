@@ -1,0 +1,58 @@
+# Some references: 
+# http://www.cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/
+# http://stackoverflow.com/questions/10759581/on-ubuntu-colored-multiline-ps1-in-bash-works-wrong-with-arrow-up-history/10759633#10759633
+
+# .bashrc, sourced by interactive non-login shells (also called by .bash_profile)
+
+
+export PATH=/sbin:/usr/sbin:/bin:/usr/bin:/home/y/bin:/usr/local/bin:/usr/X11R6/bin:/usr/NX/bin/:/home/y/bin64/
+umask 022
+export CVSROOT=vault.yahoo.com:/CVSROOT
+export CVS_RSH=/usr/local/bin/ssh
+
+source ~/.gitprompt
+__git_ps1_strip_space() { 
+    output=`__git_ps1 | sed -e "s/\s//g"` 
+    echo "$output"
+}
+
+
+title() {
+    echo -n -e "\033]0;`echo $1 | cut -d '.' -f 1`\007"
+}
+
+# Needs to escapse every meta characters when adding color to PS1
+# http://askubuntu.com/questions/24358/how-do-i-get-long-command-lines-to-wrap-to-the-next-line
+# 31 red
+# 32 green
+# 33 yellow
+# 34 this color
+# 36 cyan
+color() { 
+    echo "\[\e[0;$1m\]$2\[\e[m\]" 
+}
+
+__YROOT_NAME=$(color 36 '#'$YROOT_NAME)
+__GIT_BRANCH=$(color 33 "\$(__git_ps1_strip_space)")
+__DOLLAR_SIGN=$(color 36 '\$')
+__HOST=$(color 36 '@\h')
+__COLON=$(color 36 ':')
+__PWD=$(color 36 '\w')
+if [[ -n $YROOT_NAME ]]; then
+    export PS1="\n$__YROOT_NAME$__COLON $__PWD $__GIT_BRANCH\n$__DOLLAR_SIGN "
+else 
+    export PS1="\n$__PWD $__GIT_BRANCH\n$__DOLLAR_SIGN "
+fi
+
+
+# Update title
+title `hostname`
+ssh() {
+    title $1
+    /usr/bin/ssh -A $@
+    # http://superuser.com/questions/105499/change-terminal-title-in-mac-os-x
+    # After ssh connection is closed, refresh title
+    title `hostname`
+}
+
+[[ -f $HOME/.bashrc.local ]] && source $HOME/.bashrc.local

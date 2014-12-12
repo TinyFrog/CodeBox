@@ -6,9 +6,15 @@ set nu
 " Comment out until finding a good color scheme
 " set t_Co=256
 
+" tell vim how many columns a tab counts for 
 set tabstop=4
+" tab would be shown as spaces
 set expandtab
+" > and < would be 4 spaces
 set shiftwidth=4
+" http://stackoverflow.com/questions/1562336/tab-vs-space-preferences-in-vim
+" super good explanation about how is softtabstop different than tabstop
+set softtabstop=4
 
 " http://vim.wikia.com/wiki/VimTip906: 
 " In a console or terminal version of Vim, there is no standard procedure to paste text from another application. Instead, the terminal may emulate pasting by inserting text into the keyboard buffer, so Vim thinks the text has been typed by the user. After each line ending, Vim may move the cursor so the next line starts with the same indent as the last. However, that will change the indentation already in the pasted text.
