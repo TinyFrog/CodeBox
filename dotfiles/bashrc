@@ -7,7 +7,6 @@
 
 export PATH=/sbin:/usr/sbin:/bin:/usr/bin:/home/y/bin:/usr/local/bin:/usr/X11R6/bin:/usr/NX/bin/:/home/y/bin64/
 umask 022
-export CVSROOT=vault.yahoo.com:/CVSROOT
 export CVS_RSH=/usr/local/bin/ssh
 
 source ~/.gitprompt
@@ -32,17 +31,13 @@ color() {
     echo "\[\e[0;$1m\]$2\[\e[m\]" 
 }
 
-__YROOT_NAME=$(color 36 '#'$YROOT_NAME)
 __GIT_BRANCH=$(color 33 "\$(__git_ps1_strip_space)")
 __DOLLAR_SIGN=$(color 36 '\$')
 __HOST=$(color 36 '@\h')
 __COLON=$(color 36 ':')
 __PWD=$(color 36 '\w')
-if [[ -n $YROOT_NAME ]]; then
-    export PS1="\n$__YROOT_NAME$__COLON $__PWD $__GIT_BRANCH\n$__DOLLAR_SIGN "
-else 
-    export PS1="\n$__PWD $__GIT_BRANCH\n$__DOLLAR_SIGN "
-fi
+
+export PS1="\n$__PWD $__GIT_BRANCH\n$__DOLLAR_SIGN "
 
 
 # Update title
