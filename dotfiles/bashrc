@@ -20,6 +20,13 @@ title() {
     echo -n -e "\033]0;`echo $1 | cut -d '.' -f 1`\007"
 }
 
+# quickly launch Intellij!
+idea() {
+  file=$1
+  full_path=$(cd $(dirname "$file") && pwd -P)/$(basename "$file")
+  /Applications/IntelliJ\ IDEA\ 14.app/Contents/MacOS/idea $full_path
+}
+
 # Needs to escapse every meta characters when adding color to PS1
 # http://askubuntu.com/questions/24358/how-do-i-get-long-command-lines-to-wrap-to-the-next-line
 # 31 red
