@@ -1,0 +1,20 @@
+println "init.gradle"
+
+import org.apache.commons.math.fraction.Fraction
+
+initscript {
+  println "inside initscript{}"
+  repositories {
+      mavenCentral()
+  }
+  dependencies {
+      classpath group: 'org.apache.commons', name: 'commons-math', version: '2.0'
+  }
+}
+
+
+buildscript {
+  println "buildscript{} in init.gradle"
+}
+
+println Fraction.ONE_FIFTH.multiply(2)

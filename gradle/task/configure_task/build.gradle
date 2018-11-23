@@ -1,0 +1,17 @@
+class Foo extends DefaultTask {
+  @TaskAction
+  public void run() {
+    println "Run!"
+  }
+
+  public String arg = "arg1"
+}
+
+task("foo", type: Foo) << {
+  println "Run Faster!"
+  println arg
+
+}
+
+// foo.arg2 = "no" ---> this would be an error because Foo does not have arg2
+foo.arg = "different arg"

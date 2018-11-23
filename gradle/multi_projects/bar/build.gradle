@@ -1,0 +1,5 @@
+println ':bar'
+
+task sayNo << {
+  println 'No from bar'
+}

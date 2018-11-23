@@ -1,0 +1,17 @@
+println ":foo:build.gradle"
+
+task run << {
+  println "run foo task"
+}
+
+repositories {
+  mavenCentral()
+}
+
+configurations {
+  foo
+}
+
+dependencies {
+  foo "junit:junit:4.8.1"
+}

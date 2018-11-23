@@ -1,0 +1,21 @@
+class ThePlugin implements Plugin<Project> {
+  void apply(Project project) {
+    println "applying!"
+    def extension = project.extensions.create('jacocoAgent', ThePlugin)
+    Configuration config = project.configurations.create("hello")
+    config.incoming.beforeResolve {
+      println "howdy"
+      println extension.jacocoVersion
+    }
+  }
+
+  String jacocoVersion = "12"
+}
+
+apply plugin: ThePlugin
+
+
+jacocoAgent {
+  jacocoVersion = "23"
+}
+

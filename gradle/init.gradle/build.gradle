@@ -1,0 +1,5 @@
+println "build.gradle"
+
+buildscript {
+  println "buildscript{} in build.gradle"
+}

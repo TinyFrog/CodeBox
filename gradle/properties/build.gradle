@@ -1,0 +1,18 @@
+// gradle foo -Parg="whatevervi"
+
+
+task("foo") << {
+  // once property added by project.ext, it can be set again by doing project.setProperty()
+  project.ext.foo = 'bar'
+  project.setProperty('foo', 'blah')
+
+  // this would fail because property 'artifactory.proxy' has never been added to project 
+  //project.setProperty('artifactory.proxy', 'blah')
+
+  if (project.hasProperty("artifactory.url")) {
+    println "printing here"
+    println project.'artifactory.url'
+  }
+}
+
+

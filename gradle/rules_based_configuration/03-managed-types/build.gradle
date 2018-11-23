@@ -1,0 +1,49 @@
+/*
+    Exercises:
+
+    1. Convert the Greeting class to be a managed type.
+    2. Update the @Model rule to create an model element of the managed type.
+    3. Update the 'subject' property of the Greeting model element in the 'createGreetingTask' rule.
+    4. Run the 'printGreeting' task and observe the result.
+ */
+
+class MyPlugin extends RuleSource {
+    @Model
+    public void greeting(Greeting g) { 
+
+	}
+    
+    @Mutate
+    void updateGreeting(Greeting greeting) {
+        greeting.salutation = 'Hello'
+        greeting.subject = 'World'
+    }
+    
+    @Mutate
+    void createGreetingTask(ModelMap<Task> tasks, Greeting greeting) {
+		greeting.subject = 'Gradle' // this should fail 
+        tasks.create('printGreeting', GreetingTask) {
+            message = greeting
+        }
+    }
+}
+
+@Managed
+interface Greeting {
+    String getSalutation()
+	void setSalutation(String salutation)
+	
+    String getSubject()
+	void setSubject(String subject)
+}
+
+class GreetingTask extends DefaultTask {
+    Greeting message
+    
+    @TaskAction
+    void sayGreeting() {
+        println "$message.salutation, $message.subject"
+    }
+}
+
+apply plugin: MyPlugin

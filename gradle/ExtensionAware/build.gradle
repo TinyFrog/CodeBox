@@ -1,0 +1,30 @@
+class MyExtension {
+  String foo
+  MyExtension(String foo) {
+    this.foo = foo
+  }
+}
+
+project.extensions.create('custom', MyExtension, 'bar')
+//                       («name»,   «type»,       «constructor args», …)
+
+task taskA << {
+  println customTaskA.foo
+}
+
+taskA.extensions.create('customTaskA', MyExtension, 'taskA')
+
+task taskB(dependsOn: taskA) << {
+  println customTaskB.foo
+}
+taskB.extensions.create('customTaskB', MyExtension, 'taskB')
+
+project.custom {
+  foo "not bar any more"
+}
+
+
+println project.custom.foo
+println project.custom instanceof MyExtension
+println project.ext instanceof MyExtension
+

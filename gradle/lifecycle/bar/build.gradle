@@ -1,0 +1,9 @@
+class BarPlugin implements Plugin<Project> {
+  void apply(Project project) {
+    println "applying plugin!"
+  }
+}
+
+apply plugin: BarPlugin
+
+println ":bar:build.gradle"

@@ -1,0 +1,6 @@
+println "this is init.gradle"
+
+buildscript {
+  println "buildscript{}"
+
+}

@@ -1,0 +1,19 @@
+println "this is top level build.gradle"
+
+// how afterEvaluate{} provides value
+// http://stackoverflow.com/a/16103242/677596
+
+subprojects { subproject -> 
+  beforeEvaluate {
+    println "before evaluating " + subproject.name
+  }
+  println "evaluating, maybe? " + subproject.name
+  task("happy") << {
+    println subproject.name + " is happy"
+  }
+  afterEvaluate {
+    println "done evaluating " + subproject.name
+  }
+}
+
+

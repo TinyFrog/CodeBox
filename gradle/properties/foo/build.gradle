@@ -1,0 +1,6 @@
+// gradle print -Parg="hello foo"
+
+task("print") << {
+  //println project.'artifactory.url' // hello foo
+  println 'hello '+  project.rootProject.'artifactory.url' // hello foo
+}

@@ -1,0 +1,28 @@
+
+
+// this does not work
+//Configuration dconfig = project.getConfigurations().detachedConfiguration();
+//dconfig.dependencies.add(dep1)
+
+println "no?"
+
+repositories {
+  def liIvyPattern = "[organisation]/[module]/[revision]/[module]-[revision].ivy"
+  def liArtifactPattern = "[organisation]/[module]/[revision]/[artifact]-[revision](-[classifier]).[ext]"
+  def urls = [
+      new File("sandbox-repo").canonicalPath,
+      "${System.getProperty('user.home')}/local-repo/",
+      "http://eat1-artifactory.corp.linkedin.com:8081/artifactory/release",
+      "http://eat1-artifactory.corp.linkedin.com:8081/artifactory/snapshot"
+  ]
+  urls.each { theUrl ->
+    ivy {
+      url theUrl
+      layout "pattern", {
+        ivy liIvyPattern
+        artifact liArtifactPattern
+        m2compatible = true
+      }
+    }
+  }
+}

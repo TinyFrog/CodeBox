@@ -1,0 +1,11 @@
+// Make sure certain dependencies are loaded ahead of others
+// http://stackoverflow.com/q/7228076/677596
+
+configurations { robo }
+
+dependencies {
+  robo // blah
+  testRuntime // blah
+}
+
+sourceSets.test.runtimeClasspath = configurations.robo + sourceSets.test.runtimeClasspath

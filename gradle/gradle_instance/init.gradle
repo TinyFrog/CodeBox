@@ -1,0 +1,32 @@
+gradle.beforeProject {
+  println "beforeProject ${it.name}"
+}
+
+// it takes BuildResult here
+gradle.buildFinished {
+  println "buildFinished "
+}
+
+settingsEvaluated {
+  println "settingsEvaluated"
+}
+
+// Gradle instance is passed here, not project
+projectsEvaluated {
+  println "projectEvaluated ${gradle.rootProject.name}"
+}
+
+projectsLoaded {
+  println "say what?"
+}
+
+// Gradle instance is passed here, not project
+projectsLoaded { gradle ->
+  println "projectLoaded ${gradle.rootProject.name}"
+  println "projectLoaded ${gradle.rootProject.rootDir}" // rootDir is accessible once loaded
+}
+
+
+// This does not work:
+// > The root project is not yet available for build.
+// println gradle.rootProject.name

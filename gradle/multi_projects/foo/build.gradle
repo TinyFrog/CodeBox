@@ -1,0 +1,5 @@
+println ":foo"
+
+task sayHi(dependsOn: ':bar:sayNo') << {
+  println "hi from foo"
+}
