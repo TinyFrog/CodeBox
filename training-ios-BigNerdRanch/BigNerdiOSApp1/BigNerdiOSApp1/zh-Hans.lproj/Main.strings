@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "1000"; ObjectID = "8Sa-y3-xgH"; */
+"8Sa-y3-xgH.text" = "1000";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "A3e-Xn-CqQ"; */
+"A3e-Xn-CqQ.title" = "Item";
+
+/* Class = "UILabel"; text = "???"; ObjectID = "DFn-V6-upc"; */
+"DFn-V6-upc.text" = "???";
+
+/* Class = "UILabel"; text = "???"; ObjectID = "Kmz-M1-0LH"; */
+"Kmz-M1-0LH.text" = "???";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "a6B-vm-8Wn"; */
+"a6B-vm-8Wn.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Item 1"; ObjectID = "bLK-oJ-BV0"; */
+"bLK-oJ-BV0.title" = "Item 1";
+
+/* Class = "UILabel"; text = "is"; ObjectID = "dnT-Dx-LC3"; */
+"dnT-Dx-LC3.text" = "is";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "hwE-n4-nJi"; */
+"hwE-n4-nJi.title" = "Item";
+
+/* Class = "UITextField"; text = "Value"; ObjectID = "iIX-En-fMf"; */
+"iIX-En-fMf.text" = "Value";
+
+/* Class = "UILabel"; text = "degrees Fahrenheit"; ObjectID = "mPZ-sm-dOQ"; */
+"mPZ-sm-dOQ.text" = "华氏";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "oBA-GB-Wpk"; */
+"oBA-GB-Wpk.title" = "Item";
+
+/* Class = "UILabel"; text = "degrees Celsius"; ObjectID = "xC8-mE-0eb"; */
+"xC8-mE-0eb.text" = "摄氏";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ybw-hq-0ER"; */
+"ybw-hq-0ER.normalTitle" = "Button";

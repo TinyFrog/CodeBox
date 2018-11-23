@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8678C3611C6276440091818E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8678C3601C6276440091818E /* AppDelegate.swift */; };
+		8678C3631C6276440091818E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8678C3621C6276440091818E /* ViewController.swift */; };
+		8678C3661C6276440091818E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8678C3641C6276440091818E /* Main.storyboard */; };
+		8678C3681C6276440091818E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8678C3671C6276440091818E /* Assets.xcassets */; };
+		8678C36B1C6276440091818E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8678C3691C6276440091818E /* LaunchScreen.storyboard */; };
+		8678C3761C6276440091818E /* BigNerdiOSApp1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8678C3751C6276440091818E /* BigNerdiOSApp1Tests.swift */; };
+		8678C3811C6276440091818E /* BigNerdiOSApp1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8678C3801C6276440091818E /* BigNerdiOSApp1UITests.swift */; };
+		8678C38F1C62ACE40091818E /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8678C38E1C62ACE40091818E /* ConversationViewController.swift */; };
+		8678C3911C62C42D0091818E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8678C3901C62C42D0091818E /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8678C3721C6276440091818E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8678C3551C6276440091818E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8678C35C1C6276440091818E;
+			remoteInfo = BigNerdiOSApp1;
+		};
+		8678C37D1C6276440091818E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8678C3551C6276440091818E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8678C35C1C6276440091818E;
+			remoteInfo = BigNerdiOSApp1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8678C35D1C6276440091818E /* BigNerdiOSApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigNerdiOSApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8678C3601C6276440091818E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8678C3621C6276440091818E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8678C3651C6276440091818E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8678C3671C6276440091818E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8678C36A1C6276440091818E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8678C36C1C6276440091818E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8678C3711C6276440091818E /* BigNerdiOSApp1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigNerdiOSApp1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8678C3751C6276440091818E /* BigNerdiOSApp1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigNerdiOSApp1Tests.swift; sourceTree = "<group>"; };
+		8678C3771C6276440091818E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = BigNerdiOSApp1Tests/Info.plist; sourceTree = SOURCE_ROOT; };
+		8678C37C1C6276440091818E /* BigNerdiOSApp1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigNerdiOSApp1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8678C3801C6276440091818E /* BigNerdiOSApp1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigNerdiOSApp1UITests.swift; sourceTree = "<group>"; };
+		8678C3821C6276440091818E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8678C38E1C62ACE40091818E /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		8678C3901C62C42D0091818E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8678C3931C63D5B50091818E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		8678C3941C63D5E30091818E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		8678C3951C63D71C0091818E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8678C35A1C6276440091818E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8678C3911C62C42D0091818E /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8678C36E1C6276440091818E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8678C3791C6276440091818E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8678C3541C6276440091818E = {
+			isa = PBXGroup;
+			children = (
+				8678C3901C62C42D0091818E /* MapKit.framework */,
+				8678C35F1C6276440091818E /* BigNerdiOSApp1 */,
+				8678C37F1C6276440091818E /* BigNerdiOSApp1UITests */,
+				8678C35E1C6276440091818E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8678C35E1C6276440091818E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8678C35D1C6276440091818E /* BigNerdiOSApp1.app */,
+				8678C3711C6276440091818E /* BigNerdiOSApp1Tests.xctest */,
+				8678C37C1C6276440091818E /* BigNerdiOSApp1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8678C35F1C6276440091818E /* BigNerdiOSApp1 */ = {
+			isa = PBXGroup;
+			children = (
+				8678C3771C6276440091818E /* Info.plist */,
+				8678C3601C6276440091818E /* AppDelegate.swift */,
+				8678C3621C6276440091818E /* ViewController.swift */,
+				8678C3641C6276440091818E /* Main.storyboard */,
+				8678C3671C6276440091818E /* Assets.xcassets */,
+				8678C3691C6276440091818E /* LaunchScreen.storyboard */,
+				8678C36C1C6276440091818E /* Info.plist */,
+				8678C38E1C62ACE40091818E /* ConversationViewController.swift */,
+				8678C3741C6276440091818E /* BigNerdiOSApp1Tests */,
+			);
+			path = BigNerdiOSApp1;
+			sourceTree = "<group>";
+		};
+		8678C3741C6276440091818E /* BigNerdiOSApp1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8678C3751C6276440091818E /* BigNerdiOSApp1Tests.swift */,
+			);
+			path = BigNerdiOSApp1Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		8678C37F1C6276440091818E /* BigNerdiOSApp1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				8678C3801C6276440091818E /* BigNerdiOSApp1UITests.swift */,
+				8678C3821C6276440091818E /* Info.plist */,
+			);
+			path = BigNerdiOSApp1UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8678C35C1C6276440091818E /* BigNerdiOSApp1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8678C3851C6276440091818E /* Build configuration list for PBXNativeTarget "BigNerdiOSApp1" */;
+			buildPhases = (
+				8678C3591C6276440091818E /* Sources */,
+				8678C35A1C6276440091818E /* Frameworks */,
+				8678C35B1C6276440091818E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BigNerdiOSApp1;
+			productName = BigNerdiOSApp1;
+			productReference = 8678C35D1C6276440091818E /* BigNerdiOSApp1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8678C3701C6276440091818E /* BigNerdiOSApp1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8678C3881C6276440091818E /* Build configuration list for PBXNativeTarget "BigNerdiOSApp1Tests" */;
+			buildPhases = (
+				8678C36D1C6276440091818E /* Sources */,
+				8678C36E1C6276440091818E /* Frameworks */,
+				8678C36F1C6276440091818E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8678C3731C6276440091818E /* PBXTargetDependency */,
+			);
+			name = BigNerdiOSApp1Tests;
+			productName = BigNerdiOSApp1Tests;
+			productReference = 8678C3711C6276440091818E /* BigNerdiOSApp1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8678C37B1C6276440091818E /* BigNerdiOSApp1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8678C38B1C6276440091818E /* Build configuration list for PBXNativeTarget "BigNerdiOSApp1UITests" */;
+			buildPhases = (
+				8678C3781C6276440091818E /* Sources */,
+				8678C3791C6276440091818E /* Frameworks */,
+				8678C37A1C6276440091818E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8678C37E1C6276440091818E /* PBXTargetDependency */,
+			);
+			name = BigNerdiOSApp1UITests;
+			productName = BigNerdiOSApp1UITests;
+			productReference = 8678C37C1C6276440091818E /* BigNerdiOSApp1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8678C3551C6276440091818E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Shaobo Sun";
+				TargetAttributes = {
+					8678C35C1C6276440091818E = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					8678C3701C6276440091818E = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 8678C35C1C6276440091818E;
+					};
+					8678C37B1C6276440091818E = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 8678C35C1C6276440091818E;
+					};
+				};
+			};
+			buildConfigurationList = 8678C3581C6276440091818E /* Build configuration list for PBXProject "BigNerdiOSApp1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8678C3541C6276440091818E;
+			productRefGroup = 8678C35E1C6276440091818E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8678C35C1C6276440091818E /* BigNerdiOSApp1 */,
+				8678C3701C6276440091818E /* BigNerdiOSApp1Tests */,
+				8678C37B1C6276440091818E /* BigNerdiOSApp1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8678C35B1C6276440091818E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8678C36B1C6276440091818E /* LaunchScreen.storyboard in Resources */,
+				8678C3681C6276440091818E /* Assets.xcassets in Resources */,
+				8678C3661C6276440091818E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8678C36F1C6276440091818E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8678C37A1C6276440091818E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8678C3591C6276440091818E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8678C3631C6276440091818E /* ViewController.swift in Sources */,
+				8678C3611C6276440091818E /* AppDelegate.swift in Sources */,
+				8678C38F1C62ACE40091818E /* ConversationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8678C36D1C6276440091818E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8678C3761C6276440091818E /* BigNerdiOSApp1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8678C3781C6276440091818E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8678C3811C6276440091818E /* BigNerdiOSApp1UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8678C3731C6276440091818E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8678C35C1C6276440091818E /* BigNerdiOSApp1 */;
+			targetProxy = 8678C3721C6276440091818E /* PBXContainerItemProxy */;
+		};
+		8678C37E1C6276440091818E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8678C35C1C6276440091818E /* BigNerdiOSApp1 */;
+			targetProxy = 8678C37D1C6276440091818E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8678C3641C6276440091818E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8678C3651C6276440091818E /* Base */,
+				8678C3931C63D5B50091818E /* en */,
+				8678C3941C63D5E30091818E /* es */,
+				8678C3951C63D71C0091818E /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8678C3691C6276440091818E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8678C36A1C6276440091818E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8678C3831C6276440091818E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8678C3841C6276440091818E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8678C3861C6276440091818E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BigNerdiOSApp1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linkedin.bignerd.BigNerdiOSApp1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8678C3871C6276440091818E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BigNerdiOSApp1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linkedin.bignerd.BigNerdiOSApp1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8678C3891C6276440091818E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BigNerdiOSApp1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linkedin.bignerd.BigNerdiOSApp1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BigNerdiOSApp1.app/BigNerdiOSApp1";
+			};
+			name = Debug;
+		};
+		8678C38A1C6276440091818E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BigNerdiOSApp1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linkedin.bignerd.BigNerdiOSApp1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BigNerdiOSApp1.app/BigNerdiOSApp1";
+			};
+			name = Release;
+		};
+		8678C38C1C6276440091818E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BigNerdiOSApp1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linkedin.bignerd.BigNerdiOSApp1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BigNerdiOSApp1;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8678C38D1C6276440091818E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BigNerdiOSApp1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linkedin.bignerd.BigNerdiOSApp1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BigNerdiOSApp1;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8678C3581C6276440091818E /* Build configuration list for PBXProject "BigNerdiOSApp1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8678C3831C6276440091818E /* Debug */,
+				8678C3841C6276440091818E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8678C3851C6276440091818E /* Build configuration list for PBXNativeTarget "BigNerdiOSApp1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8678C3861C6276440091818E /* Debug */,
+				8678C3871C6276440091818E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8678C3881C6276440091818E /* Build configuration list for PBXNativeTarget "BigNerdiOSApp1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8678C3891C6276440091818E /* Debug */,
+				8678C38A1C6276440091818E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8678C38B1C6276440091818E /* Build configuration list for PBXNativeTarget "BigNerdiOSApp1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8678C38C1C6276440091818E /* Debug */,
+				8678C38D1C6276440091818E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8678C3551C6276440091818E /* Project object */;
+}
